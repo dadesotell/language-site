@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Home</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="home.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="socialMedia.html">Social Media</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact </h1>
+    <form>
+        <div>
+        <label for="name">Enter your Name: </label>
+        <input required name="name" id="name" placeholder="John Doe">
+        </div>
+
+        <div>
+        <label for="email">Enter your Email: </label>
+        <input required name="email" id="email" type="email" placeholder="example@email.com">
+        </div>
+
+        <div>
+            <label for="phone">Enter your Phone Number: </label>
+            <input required name="phone" id="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555">
+        </div>
+
+        <div>
+            <label for="date">Enter the date that you want to meet with a teacher: </label>
+            <input required name="date" id="date" type="date" placeholder="">
+        </div>
+
+        <div>
+            <label for="language">What language do you want to study? </label>
+            <select name="language">
+                <option value="English">English</option>
+                <option value="German">German</option>
+                <option value="Spanish">Spanish</option>
+                <option value="French">French</option>
+            </select>
+        </div>
+        
+        <div>
+        <label for="message">Enter any other comments here: </label>
+        <textarea name="message" id="message" type="">Type Here</textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    
+  </footer>
+
+</body>
+
+</html>
